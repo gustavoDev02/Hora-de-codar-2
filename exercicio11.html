@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício-11</title>
+</head>
+
+<script>
+    var num1 = parseInt(prompt("digite um número: "));
+    var num2 = parseInt(prompt("digite o segundo número: "));
+    
+    var opcao = parseInt(prompt("digite a operação numerica que deseja realizar: 1 - Adição | 2 - Subtração | 3 - Divisão, 4 - Multiplicação"));
+
+    switch(opcao){
+        case 1:
+            var operacao = num1 + num2;
+            document.write(`Operação escolhida: adição <p> Valor da Soma: ${operacao}`);  
+            break; 
+        case 2:
+            var operacao = num1 - num2;
+            document.write(`Operação escolhida: subtração <p> Valor da Subtração: ${operacao}`); 
+            break;
+        case 3:
+            var operacao = num1 / num2;
+            document.write(`Operação escolhida: divisão <p> Valor da Divisão: ${operacao}`);
+            break;
+        case 4:
+            var operacao = num1 * num2;
+            document.write(`Operação escolhida: multiplicação <p> Valor da Multiplicação: ${operacao}`);
+            break;
+    }
+</script>
+<body>
+    
+</body>
+</html>

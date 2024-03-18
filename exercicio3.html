@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício-3</title>
+</head>
+
+<script>
+    var num1 = parseFloat(prompt("digite um número: "));
+    var num2 = parseFloat(prompt("digite o segundo número: "));
+    var num3 = parseFloat(prompt("digite o terceiro número: "));
+ 
+    var maior = num1;
+ 
+    if (num2 > num1 && num2 > num3) {
+      maior = num2;
+    }
+ 
+    if (num3 > num1 && num3 > num2) {
+      maior = num3;
+    }
+ 
+    if (num1 === num2 && num2 === num3) {
+      alert('não é permitido valores iguais')
+    }
+ 
+    else{
+      alert(`${maior} é o maior número`)
+    }
+</script>
+<body>
+    
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício-4</title>
+</head>
+
+<script>
+    var num1 = parseFloat(prompt("Digite o primeiro número: "));
+    var num2 = parseFloat(prompt("Digite o segundo número: "));
+    var num3 = parseFloat(prompt("Digite o terceiro número: "));
+    
+    if (num1 > num2 && num1 > num3) {
+        if (num2 > num3) {
+            var soma = num1 + num2;
+            alert(`Os maiores valores são: ${num1} e ${num2} e sua soma é: ${soma}`);
+        } else {
+            var soma = num1 + num3;
+            alert(`Os maiores valores são: ${num1} e ${num3} e sua soma é: ${soma}`);
+        }
+    } else if (num2 > num1 && num2 > num3) {
+        if (num1 > num3) {
+            var soma = num2 + num1;
+            alert(`Os maiores valores são: ${num2} e ${num1} e sua soma é: ${soma}`);
+        } else {
+            var soma = num2 + num3;
+            alert(`Os maiores valores são: ${num2} e ${num3} e sua soma é: ${soma}`);
+        }
+    } else {
+        if (num1 > num2) {
+            var soma = num3 + num1;
+            alert(`Os maiores valores são: ${num3} e ${num1} e sua soma é: ${soma}`);
+        } else {
+            var soma = num3 + num2;
+            alert(`Os maiores valores são: ${num3} e ${num2} e sua soma é: ${soma}`);
+        }
+    }
+</script>
+<body>
+    
+</body>
+</html>

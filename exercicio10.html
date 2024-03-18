@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício-10</title>
+</head>
+
+<script>
+    var sexo = parseFloat(prompt("digite o seu sexo | 1 - feminino | 2 - masculino: "));
+    var altura = parseFloat(prompt("digite a sua altura: "));
+   
+    if(sexo === 1){
+        var pesoIdeal = (62.1 * altura) - 44.7; 
+        alert(`seu peso ideal é ${pesoIdeal.toFixed(2)}`); 
+    }
+    else if( sexo === 2){
+        var pesoIdeal = (72.7 * altura) - 58;   
+        alert(`seu peso ideal é ${pesoIdeal.toFixed(2)}`);
+    }
+    else{
+        alert(`essa opção não existe`);
+    }
+</script>
+<body>
+    
+</body>
+</html>
